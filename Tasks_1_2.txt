@@ -1,0 +1,62 @@
+dmitrii@Dmitrii-gb:~$ cat > 'Home_animals'
+
+Dogs
+
+Cats
+
+Hamsters
+
+^C
+
+dmitrii@Dmitrii-gb:~$ cat > 'Pack_animals'
+
+Horses
+
+Camels
+
+Donkeys
+
+^C
+
+dmitrii@Dmitrii-gb:~$ cat Home_animals Pack_animals > 'Animals'
+
+dmitrii@Dmitrii-gb:~$ cat Animals
+
+Dogs
+
+Cats
+
+Hamsters
+
+Horses
+
+Camels
+
+Donkeys
+
+dmitrii@Dmitrii-gb:~$ mv animals 'Human_Friends'
+
+mv: не удалось выполнить stat для 'animals': Нет такого файла или каталога
+
+dmitrii@Dmitrii-gb:~$ mv Animals 'Human_Friends'
+
+dmitrii@Dmitrii-gb:~$ mkdir New_directory
+
+dmitrii@Dmitrii-gb:~$ mv Human_Friends New_directory/
+
+dmitrii@Dmitrii-gb:~$ ls
+
+ docker-compose.yml   Home_animals    Pack_animals   Видео       Загрузки      Музыка         'Рабочий стол'
+
+ Dockerfile           New_directory   snap           Документы   Изображения   Общедоступные   Шаблоны
+
+dmitrii@Dmitrii-gb:~$ cd New_directory/
+
+dmitrii@Dmitrii-gb:~/New_directory$ ls -l
+
+итого 4
+
+-rw-rw-r-- 1 dmitrii dmitrii 41 окт  9 20:33 Human_Friends
+
+dmitrii@Dmitrii-gb:~/New_directory$ 
+
